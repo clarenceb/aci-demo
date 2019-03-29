@@ -13,8 +13,6 @@ source acr-vars.env
 
 az group create -n ${RGROUP} -l ${REGION}
 
-source acr-vars.env
-
 az container create --resource-group ${RGROUP} \
     --name ${DEMO_NAME} \
     --image ${ACR_LOGIN_SERVER}/${DEMO_IMAGE} \
